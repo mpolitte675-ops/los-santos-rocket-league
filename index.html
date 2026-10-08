@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Los Santos Rocket League</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <div class="hud-panel">
+        <div class="brand">LOS SANTOS // ROCKET LEAGUE</div>
+        <div class="hud-row">
+          <div class="stat">
+            <span class="label">Car</span>
+            <span id="car-name">Octane</span>
+          </div>
+          <div class="stat">
+            <span class="label">Speed</span>
+            <span id="speed-display">0</span>
+          </div>
+          <div class="stat">
+            <span class="label">Boost</span>
+            <span id="boost-display">100%</span>
+          </div>
+        </div>
+        <div class="hud-row">
+          <div class="stat">
+            <span class="label">Z</span>
+            <span id="z-display">0</span>
+          </div>
+          <div class="stat">
+            <span class="label">Ball</span>
+            <span id="ball-display">Ready</span>
+          </div>
+        </div>
+      </div>
+
+      <canvas id="gameCanvas" width="960" height="600"></canvas>
+
+      <aside class="sidebar">
+        <div class="panel">
+          <h3>Garage</h3>
+          <div class="car-select">
+            <button class="car-btn active" data-car="octane">Octane</button>
+            <button class="car-btn" data-car="fennec">Fennec</button>
+          </div>
+          <button id="reset-btn" class="action-btn">Reset Car</button>
+        </div>
+
+        <div class="panel">
+          <h3>Controls</h3>
+          <div id="controls-list"></div>
+        </div>
+      </aside>
+    </div>
+
+    <script src="game.js"></script>
+  </body>
+</html>
